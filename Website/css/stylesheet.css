@@ -194,6 +194,7 @@ overflow:scroll;
   box-sizing:border-box;
   
   }
+<<<<<<< HEAD
   .vid_text{
   position:absolute;
   font-size:2em;
@@ -222,10 +223,17 @@ overflow:scroll;
   padding:5px;
   box-sizing:border-box;
   }
+=======
+  
+>>>>>>> 8a5ad31f91a628c5e72c0a8f428b6c606807e8db
   .prod_img {
   max-width:100%;
   height:auto;
   }
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 8a5ad31f91a628c5e72c0a8f428b6c606807e8db
   h4.prodtext{
 position:absolute;
 font-size: 40px;
