@@ -1,0 +1,27 @@
+{
+  "name": "Website",
+  "version": "1.0.0",
+  "description": "lhdc-website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lauffenp/lhdc-website.git"
+  },
+  "author": "Phil Lauffenburger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauffenp/lhdc-website/issues"
+  },
+    "dependencies":{
+     "express":"^4.8.5",
+        "body-parser":"^1.6.5",
+        "ejs":"^1.0.0"
+        
+        
+    },
+  "homepage": "https://github.com/lauffenp/lhdc-website/views/index.html"
+}

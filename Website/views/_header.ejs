@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Left Hand Design Corporation</title>
+<link type="text/css" rel="stylesheet" href="./css/stylesheet.css"/>
+</head>
+
+
+
+<body>
+<div id="wrap">
+<div id="main" >
+<div class="header_cont">
+
+
+<a href="/">
+<img src= "img/logo.jpg"> </a>
+
+ </div>
+
+
+<!-- <div class="mybackground clearfix" >
+</div> -->
+<div id="navbar_cont">
+<div id="navbar">
+<ul class="topnav">
+ <!-- <li><a href="index.html">Home</a> </li> -->
+	<li>
+		<a href="contactUs"> Contact Us </a>
+	</li>
+    <li>
+		<a href="aboutUs">About Us </a>
+	</li>
+	<li>
+		<a href="heritage">Heritage Programs </a>
+	</li>
+	
+
+		<li><a href="#">Product Lines</a> 
+	<ul class="subnav">
+		<li><a href='FSM'> Fine Steering Mirrors </a> </li>
+		<li><a href='Actuators'> Electromagnetic Actuators </a> </li>
+		<li><a href='AMISO'> Active Magnet Isolation Systems  </a> </li>
+		<li><a href='elex'> Servo Electronics </a> </li>
+	</ul>	
+	</li>
+ </ul>
+ </div>
+    <div id="scroll_text"  width=100% >
+
+    <% if (nav["FSM"] == page) { %>
+   
+Custom and cost-effective models are available to meet a broad range of requirements  
+
+
+    <% } if (nav["elex"] == page) { %>
+ 
+Space-Flight Qualified Servo Control Electronics are produced in-house at LHDC 
+
+  <% } if (nav["Actuators"] == page) { %>
+    
+
+Custom, High-efficiency Electromagnetic Actuators  
+
+
+    <% } if (nav["AMISO"] == page) { %>
+
+
+Custom High Efficiency Active Magnet Isolation Systems  
+
+
+    
+    <% } if (nav["aboutUs"] == page) { %>
+    
+Employee-owned, small business interest Left Hand Design Corporation has been designing and manufacturing high quality precision pointing instruments for over 20 years. 
+    
+  <% } if (nav["index"] == page) { %>
+    
+High performance products suitable for aerospace applications in cost-effective formats 
+
+
+  <% } %>
+
+  </div>  
+ </div>
