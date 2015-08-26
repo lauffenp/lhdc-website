@@ -16,6 +16,10 @@ html{
  body {
  margin:0px;
 } 
+
+h1{
+    color:gold;
+}
 div{
 display:block;
 }
@@ -143,8 +147,7 @@ clear:both;
   #scroll_text_heritage{
    position:relative;
   display: block;
-   max-width:50%;
-   max-height:500px;
+   max-height:100%;
 	left:auto;
   font-family:Comic;
   font-size:35px;
