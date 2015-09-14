@@ -62,16 +62,26 @@ router.get("/elex", function(req, res, next) {
 });
 
 
-router.get("/FSM", function(req, res, next) {
-    res.render("FSM", {
-    page: req.url,
+router.get("/FSM/:name", function(req, res, next) {
+    res.render("FSM",
+               {
+    page: req.path,
     nav: {
-      'FSM': "/FSM"
+      'FSM': "/FSM/general"
     }
   });
 });
 
 
+
+router.get("/heritage", function(req, res, next) {
+    res.render("heritage", {
+    page: req.url,
+    nav: {
+        'heritage':"/heritage"
+    }
+  });
+});
 
 router.get("/heritage", function(req, res, next) {
     res.render("heritage", {

@@ -1,9 +1,12 @@
 var path = require("path");
 var express = require("express");
+var logger=require('morgan');
 
 var routes = require("./routes");
 var app = express();
 
+
+app.use(logger("dev"));
 app.set("port",process.env.PORT || 3000);
 
 app.set("views", path.join(__dirname,"views"));
