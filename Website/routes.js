@@ -92,5 +92,29 @@ router.get("/heritage", function(req, res, next) {
   });
 });
 
+router.get('/photo/:id', function(req,res,next){
+    res.render('photo',{
+        photoId : req.params.id,
+        page:req.url,
+        nav: {
+        'photo':"photoId"
+    }
+    }
+              )
+})
+
+router.get('/gallery', function(req,res,next){
+    res.render('gallery',{
+        page: req.url,
+        nav: {
+        'gallery':'gallery'
+    }
+    })
+})
+
+
+router.get('/*', function(req,res){
+    res.send("Ain't nothing here bucko")
+})
 
 module.exports=router;

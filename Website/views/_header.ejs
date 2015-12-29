@@ -3,17 +3,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Left Hand Design Corporation</title>
-<link type="text/css" rel="stylesheet" href="/css/stylesheet.css"/>
-</head>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<!--      <script href ="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
+      <script src="/js/scripts.js"></script>
+
+
+    
+<!-- Latest compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="/css/stylesheet.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href = "https://bootswatch.com/cerulean/bootstrap.min.css" />
+
+    </head>
 
 
 
 <body>
-<div id="wrap">
-<div id="main" >
-<div class="header_cont">
+<div id="wrap" class="container-fluid">
+<div id="main" class="col-xs-12">
+<div class="header_cont container col-xs-12">
 
 
 <a href="/">
@@ -24,70 +37,102 @@
 
 <!-- <div class="mybackground clearfix" >
 </div> -->
-<div id="navbar_cont">
-<div id="navbar">
-<ul class="topnav">
+<div id="" class="container-fluid nav" style="padding-right:0px" >
+<div  class=" bg-info container-fluid " style="margin-bottom:0px">
+<ul class="nav nav-pills pull-right" style="overflow-y:visible">
  <!-- <li><a href="index.html">Home</a> </li> -->
-	<li>
-		<a href="/contactUs"> Contact Us </a>
+	
+    
+	
+	
+
+    <li>
+        <a id="dLabel" href="#" class="dropdown-toggle" role="button" data-toggle="dropdown"><span class="nav nav-pills">Product Lines<span class="caret"></span></span> </a>
+	<ul class="dropdown-menu">
+		<li role="presentation" class="dropdown"><a href='/FSM/general'> Fine Steering Mirrors </a> </li>
+		<li role="presentation" class="dropdown"><a href='/Actuators'> Electromagnetic Actuators </a> </li>
+		<li role="presentation" class="dropdown"><a href='/AMISO'> Active Magnet Isolation Systems  </a> </li>
+		<li role="presentation" class="dropdown"><a href='/elex'> Servo Electronics </a> </li>
+	</ul>	
 	</li>
+    <li>
+        <a href="/gallery">Gallery</a>
+    </li>
+    <li>
+		<a href="/heritage">Heritage Programs </a>
+	</li>
+    
     <li>
 		<a href="/aboutUs">About Us </a>
 	</li>
-	<li>
-		<a href="/heritage">Heritage Programs </a>
-	</li>
-	
-
-		<li><a href="#">Product Lines</a> 
-	<ul class="subnav">
-		<li><a href='/FSM/general'> Fine Steering Mirrors </a> </li>
-		<li><a href='/Actuators'> Electromagnetic Actuators </a> </li>
-		<li><a href='/AMISO'> Active Magnet Isolation Systems  </a> </li>
-		<li><a href='/elex'> Servo Electronics </a> </li>
-	</ul>	
+    
+    
+    <li>
+		<a href="/contactUs"> Contact Us </a>
 	</li>
  </ul>
  </div>
-    <div id="scroll_text"  width=100% >
+<!--    <div  id="scroll_text" width=100% >-->
+    
+    </div>
 
-    <% if (page == "/FSM*") { %>
-   
+    <% if ( /FSM/g.test(page)) { %>
+   <div  class=" well col-xs-12">
+<h2><blockquote>
 Custom and cost-effective models are available to meet a broad range of requirements  
-
+</blockquote>
+</h2>
+    </div>
 
     <% } if (page=="/elex") { %>
- 
+ <div  class="container-fluid">
+<h2><blockquote>
 Space-Flight Qualified Servo Control Electronics are produced in-house at LHDC 
-
+</blockquote>
+</h2>
+    </div>
   <% } if (nav["Actuators"] == page) { %>
     
-
+<div  class="container-fluid">
+<h2><blockquote>
 Custom, High-efficiency Electromagnetic Actuators  
-
+</blockquote>
+</h2>
+    </div>
 
     <% } if (nav["AMISO"] == page) { %>
 
-
+<div  class="container-fluid">
+<h2><blockquote>
 Custom High Efficiency Active Magnet Isolation Systems  
 
-
+</blockquote>
+</h2>
+    </div>
     
     <% } if (nav["aboutUs"] == page) { %>
-    
+  <div  class="container-fluid">
+<h2><blockquote>  
 Employee-owned, small business interest Left Hand Design Corporation has been designing and manufacturing high quality precision pointing instruments for over 20 years. 
-    
+  </blockquote>
+</h2>
+    </div>  
   <% } if (nav["index"] == page) { %>
-    
+  <div  class="well well-sm container-fluid" style="margin-bottom:0px">
+<h2><blockquote>  
 High performance products suitable for aerospace applications in cost-effective formats 
-
+</blockquote>
+</h2>
+    </div>
 
   <% }  if (nav["contactUs"] == page) { %>
-    
+   <div  class="container-fluid">
+<h2><blockquote> 
 Email or Call us today to begin our exploration towards meeting your goals together 
-
-
+</blockquote>
+</h2>
+    </div>
   <% } %> 
-
-  </div>  
- </div>
+    
+  
+<!-- </div>-->

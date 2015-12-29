@@ -11,7 +11,8 @@ Custom and cost-effective models are available to meet a broad range of requirem
 
 
 
-<div class="prod_bullet">
+<!--<div class="prod_bullet">-->
+<div class="well col-xs-6" style="padding-left:0px">
 <ul style="list-style-type:disc" >
 	<li>Fine Steering Mechanisms are two-axis, tip-tilt pointing devices used to perform line of sight stabilization:</li>
 		<ul style="list-style-type:circle">
@@ -28,135 +29,117 @@ Custom and cost-effective models are available to meet a broad range of requirem
 	<li> Range of travel up to +/- 175 mRad are currently available </li>
 	<li> 15,000 rad/sec^2 acceleration available </li>
 </ul>
-<div class="imgbutton" >
+<div class="imgbutton" style="text-align:center" >
 <a href="heritage">
-<img src="/img/15-056.jpg" class="center_img" width="300px" height="auto" />
-<span class="button_text"> FSM Heritage Missions </span> 
-<span class="cr"> NASA </span>
+<!--<img src="/img/15-056.jpg" class="center_img" width="300px" height="auto" />-->
+<span class="button" > FSM Heritage Missions </span> 
+<!--<span class="cr"> NASA </span>-->
 </a>
 </div>
 </div>
-    <div class="prod_photo">
+<!--    <div class="prod_photo">-->
+<div class="container col-xs-6">
+    <h4 style="text-align:center"> Representative configurations offered by LHDC:</h4>
     <%  if (page == "/FSM/general") { %>
-        <img class="prod_img" src="/img/mirror_best.jpg" style="width:100%" />
-            <h4 class="prodtext"> <span style="width:100%">Fine Steering Mirror - FO50-35-RC </span></h4>
-    </div>
-        <select id="FSM_Selector" name="forma" onchange="location = this.options[this.selectedIndex].value;">
-            <option value="general">General</option>
-            <option value="small">Small FSM Family</option>
-            <option value="largeFSM">Large FSM Family</option>
-            <option value="oversizeFSM">Oversize Mirror</option>
-            <option value="resFSM">Resonant Scanner</option>
-            <option value="intSDEFSM">Integrated SDE</option>
-            <option value="convexFSM">Convex Mirror</option>
-        </select>
-    <% } if (page == "/FSM/small") {%>
-        <img class="prod_img" src="/img/FO15-61-BE-EA-MF SN150 high-res.jpg" style="width:100%" />
-            <h4 class="prodtext"> 
-                <span style="width:100%">FO15-61-BE-EA-MF  </span>
-            </h4>
-    </div>
-        <select id="FSM_Selector" name="forma" onchange="location = this.options[this.selectedIndex].value;">
-            <option value="general">General</option>
-            <option selected="selected" value="small">Small FSM Family</option>
-            <option value="largeFSM">Large FSM Family</option>
-            <option value="oversizeFSM">Oversize Mirror</option>
-            <option value="resFSM">Resonant Scanner</option>
-            <option value="intSDEFSM">Integrated SDE</option>
-            <option value="convexFSM">Convex Mirror</option>
-        </select>
-    <% } if (page == "/FSM/largeFSM") { %>
-        <img class="prod_img" src="/img/CE50-35-BK SN090.jpg" style="width:100%" />
-        <h4 class="prodtext"> <span style="width:100%">CE50-35-BK --LARGE FSM PLACEHOLDER </span></h4>
-    </div>
-        <select id="FSM_Selector" name="forma" onchange="location = this.options[this.selectedIndex].value;">
-            <option value="general">General</option>
-            <option value="small">Small FSM Family</option>
-            <option selected="selected" value="largeFSM">Large FSM Family</option>
-            <option value="oversizeFSM">Oversize Mirror</option>
-            <option value="resFSM">Resonant Scanner</option>
-            <option value="intSDEFSM">Integrated SDE</option>
-            <option value="convexFSM">Convex Mirror</option>
-        </select>
-        <% } if (page == "/FSM/oversizeFSM") { %>
-        <img class="prod_img" src="/img/FO15-61-BE-EA-MF SN150 high-res.jpg" style="width:100%" />
-            <h4 class="prodtext"> 
-                <span style="width:100%">OVERSIZE FSM PLACEHOLDER  </span>
-            </h4>
-    </div>
-        <select id="FSM_Selector" name="forma" onchange="location = this.options[this.selectedIndex].value;">
-            <option value="general">General</option>
-            <option selected="selected" value="small">Small FSM Family</option>
-            <option value="largeFSM">Large FSM Family</option>
-            <option selected="selected" value="oversizeFSM">Oversize Mirror</option>
-            <option value="resFSM">Resonant Scanner</option>
-            <option value="intSDEFSM">Integrated SDE</option>
-            <option value="convexFSM">Convex Mirror</option>
-        </select>
-        </div>
-        <% } if (page == "/FSM/resFSM") { %>
-        <img class="prod_img" src="/img/FO15-61-BE-EA-MF SN150 high-res.jpg" style="width:100%" />
-            <h4 class="prodtext"> 
-                <span style="width:100%">FO15-61-BE-EA-MF RESONANT SCANNER PLACEHOLDER  </span>
-            </h4>
-    </div>
-        <select id="FSM_Selector" name="forma" onchange="location = this.options[this.selectedIndex].value;">
-            <option value="general">General</option>
+  <select id="FSM_Selector" class="form-control" name="forma" onchange="location = this.options[this.selectedIndex].value;">
+            <option selected="selected" value="general">General</option>
             <option  value="small">Small FSM Family</option>
             <option value="largeFSM">Large FSM Family</option>
             <option value="oversizeFSM">Oversize Mirror</option>
+            <option value="resFSM">Resonant Scanner</option>
+            <option  value="rxnFSM">Reaction Cancelling FSM</option>
+<!--            <option value="convexFSM">Convex Mirror</option>-->
+        </select>
+        <img class="prod_img" src="/img/FO100-175-BE-HB2_SN144.jpg" style="width:100%" />
+    <h4> <span style="width:100%"> FO100-175-BE-HB2 Fine Steering Mirror </span></h4>
+    
+        
+    </div>
+    <% } if (page == "/FSM/small") {%>
+<select id="FSM_Selector" class="form-control" name="forma" onchange="location = this.options[this.selectedIndex].value;">
+            <option value="general">General</option>
+            <option selected="selected" value="small">Small FSM Family</option>
+            <option value="largeFSM">Large FSM Family</option>
+            <option value="oversizeFSM">Oversize Mirror</option>
+            <option value="resFSM">Resonant Scanner</option>
+            <option  value="rxnFSM">Reaction Cancelling FSM</option>
+<!--            <option value="convexFSM">Convex Mirror</option>-->
+        </select>
+        <img class="prod_img" src="/img/FO15-44-BE-Custom.jpg" style="width:100%" />
+            <h4> 
+                <span style="width:100%">FO15-44-BE Fine Steering Mirror  </span>
+            </h4>
+    </div>
+        
+    <% } if (page == "/FSM/largeFSM") { %>
+<select id="FSM_Selector" class="form-control" name="forma" onchange="location = this.options[this.selectedIndex].value;">
+            <option value="general">General</option>
+            <option  value="small">Small FSM Family</option>
+            <option selected="selected" value="largeFSM">Large FSM Family</option>
+            <option value="oversizeFSM">Oversize Mirror</option>
+            <option value="resFSM">Resonant Scanner</option>
+            <option  value="rxnFSM">Reaction Cancelling FSM</option>
+<!--            <option value="convexFSM">Convex Mirror</option>-->
+        </select>
+        <img class="prod_img" src="/img/FR150-35-ZDSC_SN066.jpg" style="width:100%" />
+        <h4> <span style="width:100%">FR150-25-ZD-SC Fine Steering Mirror </span></h4>
+    </div>
+        
+        <% } if (page == "/FSM/oversizeFSM") { %>
+<select id="FSM_Selector" class="form-control" name="forma" onchange="location = this.options[this.selectedIndex].value;">
+            <option value="general">General</option>
+            <option value="small">Small FSM Family</option>
+            <option value="largeFSM">Large FSM Family</option>
+            <option selected="selected" value="oversizeFSM">Oversize Mirror</option>
+            <option value="resFSM">Resonant Scanner</option>
+            <option  value="rxnFSM">Reaction Cancelling FSM</option>
+<!--            <option value="convexFSM">Convex Mirror</option>-->
+        </select>
+        <img class="prod_img" class="form-control" src="/img/FO15-61-BE-MF-EA-RT2_SNXXX.JPG" style="width:100%" />
+            <h4>  
+                <span style="width:100%">FO15-61-BE-MF-EA-RT2 Miniature Frame FSM  </span>
+            </h4>
+    </div>
+        
+        </div>
+        <% } if (page == "/FSM/resFSM") { %>
+<select id="FSM_Selector" class="form-control" name="forma" onchange="location = this.options[this.selectedIndex].value;">
+            <option value="general">General</option>
+            <option selected="selected" value="small">Small FSM Family</option>
+            <option value="largeFSM">Large FSM Family</option>
+            <option value="oversizeFSM">Oversize Mirror</option>
             <option selected="selected" value="resFSM">Resonant Scanner</option>
-            <option value="intSDEFSM">Integrated SDE</option>
-            <option value="convexFSM">Convex Mirror</option>
+            <option  value="rxnFSM">Reaction Cancelling FSM</option>
+<!--            <option value="convexFSM">Convex Mirror</option>-->
         </select>
-        </div>
-        <% } if (page == "/FSM/intSDEFSM") { %>
-        <img class="prod_img" src="/img/FO15-61-BE-EA-MF SN150 high-res.jpg" style="width:100%" />
-            <h4 class="prodtext"> 
-                <span style="width:100%">FO15-61-BE-EA-MF INTEGRATED SDE PLACEHOLDER </span>
+        <img class="prod_img" src="/img/FF75-262-SA-ET1_SN158.jpg" style="width:100%" />
+            <h4 > 
+                <span style="width:100%">FF75-262-SA-ET1 Resonant Scanner</span>
             </h4>
     </div>
-        <select id="FSM_Selector" name="forma" onchange="location = this.options[this.selectedIndex].value;">
+        
+        </div>
+        <% } if (page == "/FSM/rxnFSM") { %>
+ <select id="FSM_Selector" class="form-control" name="forma" onchange="location = this.options[this.selectedIndex].value;">
             <option value="general">General</option>
             <option selected="selected" value="small">Small FSM Family</option>
             <option value="largeFSM">Large FSM Family</option>
             <option value="oversizeFSM">Oversize Mirror</option>
             <option value="resFSM">Resonant Scanner</option>
-            <option selected="selected" value="intSDEFSM">Integrated SDE</option>
-            <option value="convexFSM">Convex Mirror</option>
+            <option selected="selected" value="rxnFSM">Reaction Cancelling FSM</option>
+<!--            <option value="convexFSM">Convex Mirror</option>-->
         </select>
-        </div>
-        <% } if (page == "/FSM/convexFSM") { %>
-        <img class="prod_img" src="/img/FO15-61-BE-EA-MF SN150 high-res.jpg" style="width:100%" />
-            <h4 class="prodtext"> 
-                <span style="width:100%">FO15-61-BE-EA-MF Convex FSM placeholder  </span>
+        <img class="prod_img" src="/img/FR35-52-BD-RC_SN076.jpg" style="width:100%" />
+            <h4 > 
+                <span style="width:100%">FR35-52-BD-RC Reaction Force Cancelling FSM </span>
             </h4>
     </div>
-        <select id="FSM_Selector" name="forma" onchange="location = this.options[this.selectedIndex].value;">
-            <option value="general">General</option>
-            <option selected="selected" value="small">Small FSM Family</option>
-            <option value="largeFSM">Large FSM Family</option>
-            <option value="oversizeFSM">Oversize Mirror</option>
-            <option value="resFSM">Resonant Scanner</option>
-            <option value="intSDEFSM">Integrated SDE</option>
-            <option selected="selected" value="convexFSM">Convex Mirror</option>
-        </select>
+       
+       
+       
         <% }  %>
 
 
 
-<!--
-<div class="prod_photo" >
-<img class="prod_img" src="css/img/SN139_2.jpg" />
-<h4 class="prodtext"> <span>Fine Steering Mirror - FO100-170-AL </span></h4>
-</div>-->
 
-<!--<div class="video"  >
-<span class="vid_text" width="30%">
-LHDC FSM performing various slewing and scanning functions as a brief demo
-</span>
-<video id="Mirror_demo_vid" width="480" height="360" style="float:right" preload controls muted >
-	<source src="css/vid/SN021 Demo Video.mp4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'  />
-</video>
-</div> -->
 <% include _footer %>
